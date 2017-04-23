@@ -1,0 +1,21 @@
+Módulo 7: Estudo de Caso
+Continuidade de Negócios em VDC
+
+A ABC Medicals é um dos principais intervenientes no fornecimento de serviços de saúde consistentemente acessíveis aos seus pacientes. A infra-estrutura de TI e os sistemas que suportam estes serviços desempenham um papel importante na garantia de que o pessoal pode trabalhar de forma eficaz e eficiente. É essencial que os dados estejam totalmente protegidos e recuperáveis para atender aos SLAs internos e aos requisitos regulatórios externos.
+Com mais de 50 servidores físicos em execução e mais de 100 TB de dados críticos para proteger, há uma série de desafios em andamento que afetam o gerenciamento eficaz de processos de backup e recuperação, bem como o desempenho ea confiabilidade da infra-estrutura. Em particular, as janelas de backup são difíceis de atender e as recuperações são lentas e intensivas em recursos.
+Como um passo estratégico, a ABC planeja adotar a tecnologia de virtualização em seu data center e redesenhar sua infraestrutura para que possam executar cerca de 500 servidores virtuais sem aumentar a contagem de servidores físicos conforme suas operações expandem e precisam de suporte para aumentar os requisitos de capacidade de armazenamento.
+A ABC definiu os objetivos de sua nova infraestrutura de data center virtualizada, incluindo a implementação de padrões e processos consistentes; Melhorar as capacidades de recuperação de desastres com metas RPO curtas; E melhorar a velocidade ea confiabilidade de backups e restaurações.
+
+Tarefas:
+Sugerir opções adequadas para lidar com os seguintes requisitos:
+
+1) Uma capacidade de sobreviver a desastres no centro de dados primário com RTO mínimo.
+
+Implantar um data center fisico a no minimo 15Km de distancia do atual, realizando backups quando o consumo da banda de trafego estiver com fluxo reduzido.
+
+2) Implementação consistente e padronizada de máquinas virtuais em data center.
+
+
+3) Uma capacidade de sobreviver a falha em um servidor físico enquanto cumpre requisitos RPO reduzidos usando armazenamento limitado.
+
+4) Largura de banda de rede otimizada, bem como requisitos de capacidade de armazenamento para backups.
