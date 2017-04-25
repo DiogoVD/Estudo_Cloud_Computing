@@ -1,0 +1,41 @@
+rails new Adress_mapper -T -B
+echo '2.2.3' > .ruby-version
+echo 'davinci_coders' > .ruby-gemset
+bundle
+rails g bootstrap:install
+
+rails g scaffold User latitude:float longitude:float name:string address:string title:string
+
+rake db:migrate
+
+rails s
+
+#
+Root 'users#index'
+
+#
+em models/user.rb adicionar
+	geocoded_by :address
+	after_validation :geocode
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''gmaps4rails'''''
+https://github.com/apneadiving/Google-Maps-for-Rails
+https://www.youtube.com/watch?v=oi3yxYs8Y4Q
+#
+na gem file adicionar: gem 'gmaps4rails'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+##gems
+gem 'rspec-rails'
+gem 'guard-bundler'
+gem 'guard-rspec'
+gem 'factory_girl_rails'
+gem 'capybara'
+gem 'geocoder'
+gem 'bootstrap-generators'
+gem 'gmaps4rails'
+
+bundle
+
